@@ -9,3 +9,5 @@ RUN wget https://packages.microsoft.com/config/ubuntu/20.10/packages-microsoft-p
     apt-get install -y dotnet-sdk-5.0
 
 USER jenkins
+
+ENV JENKINS_OPTS --httpPort=${PORT}
