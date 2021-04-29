@@ -10,4 +10,4 @@ RUN wget https://packages.microsoft.com/config/ubuntu/20.10/packages-microsoft-p
 
 USER jenkins
 
-ENV JENKINS_OPTS --httpPort=${PORT}
+EXPOSE 8080
